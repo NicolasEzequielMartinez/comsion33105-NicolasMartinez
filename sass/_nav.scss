@@ -1,0 +1,21 @@
+header{
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    background-color: burlywood;
+    nav{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+            a{
+            text-decoration: none;
+            }
+        }
+    }
+}

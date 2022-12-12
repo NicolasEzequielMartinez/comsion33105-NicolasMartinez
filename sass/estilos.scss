@@ -1,51 +1,28 @@
 /*mobile first 0px-500px*/
-*{
-    padding: 0;
-    margin: 0;
-}
-html{
-    font-size: 62.5%;
-}
-@font-face {
-    font-family: Gotham Pro;
-    src: url(../assets/fonts/GothaProBla.otf);
-}
-@font-face {
-    font-family: Gotham Pro Regular;
-    src: url(../assets/fonts/GothaProMed.otf);
-}
-body{
-    text-align: center;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: black;
-}
-header{
-    font-size: large;
-    display: grid;
-    justify-content: center;
-    background-color: burlywood;
-}
+@import "variableGlobal";
+@import "fuentes";
+@import "generales";
+@import "nav";
+
 h1{
     font-family: Gotham Pro;
-    color: aliceblue;
+    color: $color2;
+    font-size: 28px;
 }
 h2, h3, p, a, footer{
     font-family: Gotham Pro Regular;
-    color: aliceblue;
+    color: $color2;
 }
 h1, h2{
     margin: 5px;
 }
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
+h2{
+    font-size: 25px;
 }
-a{
-    text-decoration: none;
+p{
+    font-size: $size;
 }
+
 footer{
     padding: 3em;
     background-color: burlywood;
@@ -61,16 +38,6 @@ footer{
     }
 .logoParra{
     transform: rotate(360deg)
-}
-nav{
-padding: 10px;
-display: flex;
-justify-content: space-around;
-align-items: center;
-width: auto;
-}
-li{
-    padding: 10px;
 }
 /*declaraciones del grid area*/
 header{
@@ -121,7 +88,7 @@ iframe{
         background-color: aliceblue;
     }
     h1, h2, h3, p{
-        color: black;
+        color: $color;
     }
     iframe{
         width: 500px;
