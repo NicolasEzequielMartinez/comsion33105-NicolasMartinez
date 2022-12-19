@@ -47,6 +47,19 @@ header nav ul li a {
   text-decoration: none;
 }
 
+.contactoFlex {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.formulario {
+  border: 5px solid black;
+}
+
 h1 {
   font-family: Gotham Pro;
   color: aliceblue;
